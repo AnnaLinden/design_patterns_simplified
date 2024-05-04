@@ -1,15 +1,15 @@
 package com.example;
 
-public class VegBurger extends Burger {
+public class ChickenBurger extends Burger {
 
     @Override
     public float price() {
-        return 25.0f;
+        return 30.0f;
     }
 
     @Override
     public String name() {
-        return "Veg Burger";
+        return "Chicken Burger";
     }
 
 }
