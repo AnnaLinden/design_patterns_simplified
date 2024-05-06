@@ -44,11 +44,13 @@ class Computer {
         System.out.println("Haaah!");
     }
 }
-ComputerFacade Class
+```
+
+### ComputerFacade Class
+
 This class acts as the facade, providing simpler interfaces to the subsystem.
 
-java
-Copy code
+```java
 class ComputerFacade {
     private Computer computer;
 
@@ -69,11 +71,13 @@ class ComputerFacade {
         computer.sooth();
     }
 }
-Main Class
+```
+
+### Main Class
+
 This class demonstrates the use of the Facade pattern.
 
-java
-Copy code
+```java
 public class FacadeDemo {
     public static void main(String[] args) {
         ComputerFacade computer = new ComputerFacade(new Computer());
@@ -81,8 +85,8 @@ public class FacadeDemo {
         computer.turnOff(); // Output: Bup bup bup buzzzz! Haaah! Zzzzz
     }
 }
-Explanation
-In this example, the ComputerFacade provides a simple interface to the complex operations of the Computer class. Users interact with the facade instead of directly with the subsystem, making it easier to operate the computer.
-
-css
 ```
+
+### Explanation
+
+In this example, the ComputerFacade provides a simple interface to the complex operations of the Computer class. Users interact with the facade instead of directly with the subsystem, making it easier to operate the computer.
